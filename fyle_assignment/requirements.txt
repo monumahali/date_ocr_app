@@ -1,0 +1,7 @@
+flask
+numpy
+opencv-python
+imutils
+pytesseract
+dateparser
+python-dateutil
