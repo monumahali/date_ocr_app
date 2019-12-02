@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 
 from helper_functions import ocr_pipeline_run
@@ -6,6 +7,8 @@ from helper_functions import ocr_pipeline_run
 
 # allow files of image extensions only
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'bmp', 'gif'])
+
+port = int(os.environ.get("PORT", 5000))
 
 app = Flask(__name__)
 
@@ -60,4 +63,4 @@ def upload_page():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0',port=port)
