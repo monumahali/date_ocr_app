@@ -1,7 +1,7 @@
 # Date OCR app
 
 This app is capable of extracting dates from the images of receipts. 
-This uses Pytesseract to extract the text from the preprocessed images and then 
+This uses Pytesseract OCR to extract the text from the preprocessed images and then 
 this text is passed through the date parsers and regex to extract valid dates.
 
 ## Web app
